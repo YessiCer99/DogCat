@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Cat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+<div class="modal">
+<div class="modal-content">
+<span id="close-dialog" onclick="closeDialog()">X</span>
+<h4>FORMULARIO PARA AGREGAR UNA MASCOTA</h4>
+<p>Ingresa aquí los datos de la mascota que deseas dar en adopción</p>
+<div class="form-content">
+<form id="formParte1" name="formParte1" enctype="multipart/form-data" method="post">
+  <table style="border:none;">
+    <thead>
+    <tr>
+    <th>Nombre:</th>
+    <th><input name="valNombre" class="input" type="text" id="nombre" placeholder="Nombre" /></th>
+    </tr>
+    <tr>
+      <th>Raza:</th>
+      <th>
+        <select name="valRaza" class="input" id="raza">
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+        </select>
+      </th>
+    </tr>
+    <tr>
+    <th>Talla:</th>
+    <th>
+    <select class="input" name="valTalla" id="talla">
+      <option value="Pequeño">Pequeño</option>
+      <option value="Mediano">Mediano</option>      
+      <option value="Grande">Grande</option>
+    </select>
+    </th>
+    </tr>
+    <tr>
+    <th>Edad:</th>
+    <th>
+    <input name="valEdad" class="input" type="number" id="edad" placeholder="Edad"/>
+    </th>
+    </tr>
+    <tr>
+    <th>Color:</th>
+    <th><input name="valColor" class="input" type="text" id="color" placeholder="Color" /></th>
+    </tr>
+    <tr>
+    <th>Sexo</th>
+    <th>
+    <select name="valSexo" class="input" id="sexo">
+    <option value="Hembra">Hembra</option>
+    <option value="Macho">Macho</option>
+    </select>
+    </th>
+    </tr>
+    <tr>
+      <th>Esterilizado</th>
+      <th>
+      <select name="valEst" class="input" id="esterilizado">
+      <option value="Sí">Sí</option>
+      <option value="No">No</option>
+      </select>
+      </th>
+      </tr>
+    <tr>
+    <th>Fotografia</th>
+    <th>
+    <label for="upload-photo">
+    <input name="valFoto" type="file" id="upload-photo" accept="image/*"/>
+    <span name="valFoto2" class="input" id="imagen">Examinar</span>
+    </label>
+    </th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</form>
+<form>
+
+  <button type="button" id="button-add-new" onclick="addMascota()">Agregar</button>
+</form>
+</div>
+</div>
+</div>
+<nav class="navbar">
+<div class="navbar-cont">
+<button type="button" class="navbar-burger" onclick="toggleMenuOpen()"></button>
+<div class="navbar-logo"></div>
+<span class="navbar-title">DogCat</span>
+</div>
+<div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+<nav class="navbar-menu">
+<div class="navbar-menu-header">
+<div class="header-icon"></div>
+<h1>ADMINISTRADOR</h1>
+</div>
+<button>Mascotas</button>
+<div class="submenu"><a>Catálogo de mascotas</a>
+<button onclick="window.location.href = 'Catalogo_dogs.html'">Catálogo de perros</button>
+<button onclick="window.location.href = 'Catalogo_cats.html'">Catálogo de gatos</button>
+</div>
+<button onclick="window.location.href = 'solicitudesAdopcion.html'">Solicitudes de adopción</button>
+<button onclick="window.location.href = 'donaciones.html'">Donaciones</button>
+</nav>
+<div class="content-right">
+  <div id="image-right"></div>
+  <button id="button-add" onclick="showDialog()" type="button">Anadir mascota</button>
+  <button id="button-back" onclick="window.location.href = 'index.html'" type="button">Volver</button>
+</div>
+</nav>
+<div class="container">
+<div class="table">
+    <table>
+        <caption>Gestión de mascotas</caption>
+        <thead>
+          <tr>
+            <!-- <th>&nbsp;</th> -->
+            <th>Nombre</th>
+            <th>Talla</th>
+            <th>Edad</th>
+            <th>Color</th>
+            <th>Sexo</th>
+            <th>Esteril</th>
+            <th>Imagen</th>
+            <th>Raza</th>
+            <th>Eliminar</th>
+          </tr>
+      </thead>
+      <tbody id="tab-body"></tbody>
+    </table>
+</div>
+</div>
+<!--<script type="module" src="js/backend.js"></script>-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/hello.all.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/admin.js"></script>
+<footer>
+</footer>
+</body>
+</html>

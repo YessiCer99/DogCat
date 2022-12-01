@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adoptar.css" />
+    <title>Adoptar</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+        <span class="material-icons">Menu</span>
+        </button>
+        <img class="img_amigo" src="/public/images/amigo_dog.jpg"></img>
+        <h1 class="text_amigo">Un nuevo compañero de<br></br>vida te espera</h1>
+        <nav class="navbar-menu" style="padding: 10px;">
+         
+        <button class="button_adopcion" onclick="reedireccionar('perro')">ADOPTA UN PERRO</button>
+        <button class="button_adopcion" onclick="reedireccionar('gato')">ADOPTA UN GATO</button>
+        </nav>
+    </nav>
+    <h1>Comienza tu proceso de adopción</h1>
+    <div class="contFul">
+        <div class="izFloat">
+            <img id="imgMascota626" src="images/adoptar.PNG" alt="">
+        </div>
+        <div class="izFloat">
+            <p>Apoyano con tus datos para poder llevar un protocolo seguro y confiable para su adopción</p>
+            <p>Así nos ayudas a erradicar con solicitudes falsas y de dudosas intenciones</p>
+            <div class="doFloat">
+                <p>Sigue los siguientes pasos para contactar a su protector:</p>
+                <ol>
+                    <li>Llena el fomulario</li>
+                    <li>Se enviará tu información al protector. Si tu solicitud es aceptada se te harán llegar los datos de su contacto por medio de un correo electronico</li>
+                    <li>Se agendará una cita para conocerse ambas partes (adoptable y adoptante).</li>
+                </ol>
+            </div>
+        </div>   
+        <div class="izFloat">
+            <form action="">
+                <input id="valNombre" placeholder="Nombre Completo" type="text" name="" id=""><br>
+                <input id="valTelefono" placeholder="Teléfono" type="number" name="" id=""><br>
+                <input id="valCorreo" placeholder="Correo eléctronico" type="email" name="" id=""><br>
+                <textarea id="valR1" placeholder="¿Porqué quieres adoptar?" class="form-control" name="" rows="3" placeholder="Material prestado" maxlength="500"></textarea><br>
+                <textarea id="valR2" placeholder="¿Donnde y con quienes vivirá el adoptante?" class="form-control" name="" rows="3" placeholder="Material prestado" maxlength="500"></textarea><br>
+                <input onclick="addSolicitud()" type="button" value="ENVÍAR SOLICITUD">
+            </form>
+        </div>             
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/adoptar.js"></script>
+</body>
+</html>

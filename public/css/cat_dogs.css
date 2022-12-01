@@ -1,0 +1,707 @@
+
+/*CSS barra de navegacion de las paginas de catalogo de perros y gatos*/
+@font-face
+{
+	font-family: "League Spartan";
+	src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+}
+
+.img_amigo{
+    
+        height: 62px;
+        margin-left: 16px;
+    
+}
+.text_amigo{
+    
+       
+        font-family: 'League Spartan';
+        font-size: 19px;
+        font-weight: 400;
+        color: black;
+        position: fixed;
+        margin-left: 75px;
+    
+    
+}
+
+button.button_again:hover, button.button_adopcion:hover{
+    background-color: black!important;
+
+
+}
+.navbar-menu > .button_again2{
+    font-family: "League Spartan";
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 120px;
+    left: 1260px;
+    margin-right: 35px;
+    margin-left: 35px;
+    top: 41px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+.navbar > .button_again2{
+    font-family:"League Spartan";
+    background-color:black; 
+    color:#ffff;
+    border-radius:5px; 
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+.navbar-menu > .button_adopcion{
+    font-family:"League Spartan";
+    background-color: #332213; 
+    color:#ffff;
+    border-radius:5px; 
+    height: 40px;
+    width: 279px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+#title_dogs{
+    text-align: center;
+    padding: 60px 0px 16px 0px;
+    color: black;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/*CSS categorias de busqueda de perros y gatos*/
+
+#hembra, #Macho{
+    font-size: 20px;
+    color: black;
+    
+}
+ .title_cat{
+    margin-left: 25px;
+    text-align: left;  
+    color: black;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 25px;
+
+ }
+.store-adopt{
+    display: flex;
+}
+
+.category-list{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 20%;
+    margin-right: 20px;
+}
+
+.buscar {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .buscar input {
+    width: 90%;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+  }
+  
+  .btn {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: gray;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .buscar:hover input {
+    width: 90%;
+  }
+  
+  .buscar input:focus {
+    width: 90%;
+  }
+  .buscador_category{
+    text-align:center; 
+    margin:20px;
+  }
+
+
+/* CSS de tarjetas de mascotas en adopcion en el catalogo*/
+
+.product-animals{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-animals .product-item{
+    width: 29%;
+    margin: 2%;
+    margin-bottom: 25px;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+background-color: #9e724e;
+border-radius: 20px 20px 0px 0px;
+}
+
+.product-animals .product-item .buscador_category{
+    display: flex;
+    width: 20px;
+}
+
+
+.product-animals .product-item img{
+    border-radius: 20px 20px 0px 0px ;
+    width: 100%;
+}
+
+
+.buscador_category > .button_adopcion2{
+    background-color: #332213; 
+    color:#ffff;
+    margin: 5px; 
+    border-radius: 5px; 
+    padding: 10px 25px; 
+    height: 35px;
+    font-family: 'League Spartan';
+    font-size: 16px;
+    font-weight: 400;
+}
+.buscador_category >  .button_adopcion3{
+    background-color: #FF0000; 
+    color:#ffff;
+    margin: 5px; 
+    border-radius: 5px; 
+    padding: 10px 25px; 
+    height: 35px;
+    font-family: 'League Spartan';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nombre_mascota{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'League Spartan';
+    font-weight: 400;
+}
+
+/*CSS detalles de la mascota en adopción*/
+
+.detalle-animal {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.foto_description{
+    display: flex;
+}
+
+h1#title_description{
+    margin-left: 36%;
+    text-align: center;
+    padding: 65px 0px 30px 0px; 
+    color: black;
+    font-size: 26px;
+    font-family: 'League Spartan';
+    
+}
+
+h1#title_foto{
+    
+    margin-left: 17%;
+    text-align: center;
+    padding: 65px 0px 30px 0px;
+    color: black;
+    font-size: 30px;
+    font-family: 'League Spartan';
+    
+}
+
+
+.foto-mascota{
+    display: flex;
+}
+
+.foto-adopcion{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 20%;
+    margin-left: 80px;
+}
+
+.detalles-animal{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detalles-animal .detalle-animales{
+    width: 90%;
+    margin: 2%;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+li.description-mascota {
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'League Spartan';
+}
+h5.datos {
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'League Spartan';
+}
+.product-animals2{
+    width: 100%;
+    display: flex;
+    
+}
+
+.product-animals2 .product-item{
+    width: 29%;
+    margin: 2%;
+    margin-bottom: 25px;
+box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+background-color: #9e724e;
+border-radius: 20px 20px 0px 0px;
+}
+
+.product-animals2 .product-item .buscador_category{
+    display: flex;
+    width: 20px;
+}
+
+
+.product-animals2 .product-item img{
+    border-radius: 20px 20px 0px 0px ;
+    width: 100%;
+}
+
+/*Responsive catalogos completos*/
+
+@media screen and (max-width:900px){
+    .navbar-menu > .button_again2 {
+        display: none;
+    }
+
+    .navbar-menu > .button_adopcion {
+        height: 30px;
+        width: 131px;
+        margin-top: 2px;
+        height: 40px;
+        width: 160px;
+        font-size: 14px;
+    }
+
+    .navbar {
+        position: absolute!important;
+    }
+    .text_amigo {
+        font-family: 'League Spartan';
+        font-size: 16px;
+        position: absolute;
+    }
+    .product-animals {
+        
+        display: none;
+   
+    }
+    .detalles-mascota {
+        display: flex;
+        margin: 3%;
+    }
+
+    #carrusel {
+        
+            float: left;
+            width: 100%;
+            overflow: hidden;
+            height: 60%;
+            position: absolute;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        
+    }
+     
+    #carrusel .left-arrow {
+        position:absolute;
+        left:10px;
+        z-index:1;
+        top:50%;
+        margin-top:-9px;
+    }
+     
+    #carrusel .right-arrow {
+        position:absolute;
+        right:10px;
+        z-index:1;
+        top:50%;
+        margin-top:-9px;
+    }
+     
+    .carrusel {
+        width: 534%;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    }
+     
+    .carrusel>div {
+        float: left;
+    height: 100%;
+    margin: 0px 30px 0px 30px;
+    width: 7%;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #9e724e;
+    }
+     
+    .carrusel img {
+        width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    cursor: pointer;
+    height: 58%;
+    }
+     
+    .product {
+        border:#CCCCCC 1px solid;
+    }
+
+    h2.nombre_mascota {
+        font-size: 20px;
+    }
+    .buscador_category {
+        align-self: center;
+        display: flex;
+    }
+    
+    
+    .buscador_category2 > .button_adopcion2{
+        background-color: #332213; 
+        color:#ffff;
+        margin: 5px; 
+        border-radius: 5px; 
+        padding: 10px 17px; 
+        height: 35px;
+        font-family: 'League Spartan';
+        font-size: 13px;
+        font-weight: 400;
+        
+    }
+    .buscador_category2 >  .button_adopcion3{
+        background-color: #FF0000; 
+        color:#ffff;
+        margin: 5px; 
+        border-radius: 5px; 
+        padding: 10px 17px; 
+        height: 35px;
+        font-family: 'League Spartan';
+        font-size: 13px;
+        font-weight: 400;
+    
+    }
+    
+
+    .category-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+        margin: 12% 20% 2%;
+    }
+
+    .container > h1#title_dogs {
+        display: none;
+    }
+    .version_resp > h1#title_dogs {
+        padding: 0%;
+    }
+    .store-adopt > .product-animals2{
+        display: none;
+    }
+
+    .foto_description {
+        display: block;
+    }
+    h1#title_description {
+        margin-left: 0px;
+        padding: 65px 0px 0px 0px;
+    }
+    h1#title_foto {
+        display: none;
+    }
+    .foto-adopcion {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 20%;
+        margin: 10%;
+    }
+
+    .foto-mascota > .detalles-animal {
+        display: none;
+    }
+    .foto-mascota > .detalle-animal {
+        display: none;
+    }
+    .detalles-mascota {
+        display: flex;
+    }
+    .detalles-animal {
+        width: 50%;
+        margin-bottom: 0px;
+    margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .detalle-animal {
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    h5.datos {
+        color: black;
+        margin: 10px;
+        font-size: 17px;
+        font-weight: 100;
+        font-family: 'League Spartan';
+    }
+    li.description-mascota {
+        color: black;
+        margin: 10px;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: 'League Spartan';
+    }
+
+    .foto-adopcion > img{
+        width: 100%;
+        height: 100%;
+    }
+    .detalles-animal .detalle-animales {
+        width: 100%;}
+
+}
+
+
+@media screen and (min-width:900px){
+
+
+    .detalles-mascota {
+        display: none;
+    }
+
+    #carrusel{
+        display: none;
+    }
+
+    .version_resp > h1#title_dogs {
+        display: none;
+    }
+}
+
+
+/*CSS principal*/
+
+* {
+    box-sizing: border-box;
+}
+
+#map
+{
+height: 450px;
+margin: 100px 10px;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background: orange;
+    color: #f9f9f9;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 0 0 16px;
+    }
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1.0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar-overlay {
+        display: none;
+    }
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar-burger {
+        display: none;
+    }
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(0,0,0, 1.0);
+    visibility: hidden;
+    transition: translate 0.3s;
+}
+
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar-menu {
+        position: static;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
+    }
+}
+
+
+
+body.open .navbar-menu > button {
+    color: rgba(255, 255, 255, 1.0);
+    background: rgba(0, 0, 0, 0.0);
+    border-radius: 0px;
+    padding: 0 0px;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+}
+.navbar-menu > button {
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1.0);
+  background: rgba(0, 0, 0, 0.0);
+  border-radius: 10px;
+  padding: 0 10px;
+  height: 20px;
+}
+.navbar-menu > button.active {
+    color: inherit;
+}
+
+body {
+    display: contents;
+    color: brown;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin: 30px;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:transparent;
+    
+  }
+  .container:before {
+    content: "";
+    left: -150%;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1.0);
+    transform: rotate(0deg);
+    z-index: -1;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Descripción mascota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cat_dogs.css" />
+    <script type="text/javascript" src="js/backend.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+</head>
+
+<body>
+<nav class="navbar">
+<div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+<button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+<span class="material-icons">Menu</span>
+</button>
+<button class="button_again2" onclick="volver999();">Volver</button>
+<nav class="navbar-menu" style="padding: 10px;">
+<button type="button" class="button_adopcion" onclick="select('dogs')">ADOPTA UN PERRO</button>
+<button class="button_adopcion" onclick="select('cats')">ADOPTA UN GATO</button>
+</nav>
+</nav>
+
+<!-- inicio depagina de descripcion de la mascota -->
+
+<div class="container" style="min-height: 80vh;" >
+    <div class="foto_description" >
+        <h1 id="title_foto">FOTOS</h1>
+<h1 id="title_description" >Información General</h1>
+</div>
+<div class="foto-mascota" id="divContenedor">
+
+</div>
+
+
+<!-- seccion de la descripcion de la mascota de modo responsivo -->
+
+<div class="detalles-mascota" id="divCont2">
+
+    
+</div>
+
+    <!-- modo de pagina de texto -->
+
+<div class="container" style="min-height: 75vh; background-color: #F6D581; margin: 0px;" >
+    <h1 id="title_dogs" style="text-align: center; padding-top: 20px; margin-bottom: 0px;  color: black;">quizás quieras conocer a</h1>
+
+<!-- modo responsivo del texto -->
+
+<div class="version_resp">
+    <h1 id="title_dogs" style="text-align: center; padding-top: 20px; margin-bottom: 0px;  color: black;">quizás quieras conocer a</h1>
+    </div>
+
+
+<!-- catalogo de mascotas de la pagina normal-->
+
+    <div class="store-adopt">
+    <section class="product-animals2" id="sec4">
+
+    
+    </section>
+    </div>
+
+    <!-- Modo respondivo de catalogo  -->
+    
+        <div id="carrusel">
+          <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+          <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+          <div class="carrusel" id="car444">
+
+
+          </div>
+
+<footer>
+</footer>
+
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/description.js"></script>
+
+
+
+
+</body>

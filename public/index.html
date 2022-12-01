@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>DogCat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/hello.all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+<div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+<button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+<span class="burguer-icon"></span>
+</button>
+<div class="navbar-logo">
+<img class="navbar-image" src="assets/logo.webp"/>
+<h1 class="navbar-title">DogCat</h1>
+</div>
+<nav class="navbar-menu">
+<!-- Content -->
+</nav>
+</nav>
+<div class="container">
+<div class="left">
+<div class="dog">
+<div class="circle"></div>
+</div>
+</div>
+<div class="right">
+<div id="form-container">
+<div id="form-content">
+<img width="100" src="./assets/Icono_user.webp"/>
+<input type="text" placeholder="USERNAME" id="">
+<input type="text" placeholder="PASSWORD" id="">
+<button type="button" id="btn-login">Login</button>
+<div id="separator"></div>
+<button type="button" onclick="initOAuth('google')" id="btn-g-oauth"></button>
+</div>
+</div>
+</div>
+</div>
+<!-- <script type="module" src="js/backend.js"></script>-->
+<script type="text/javascript" src="js/main.js"></script>
+<footer>
+</footer>
+</body>
+</html>

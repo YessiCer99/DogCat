@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Cat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/about.css" /></head>
+    <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKH3MFAxTeIHbLHs7KzJnp8xkFsmheCCo&callback=initMap&libraries=&v=weekly"
+defer>
+</script>
+<body>
+<nav class="navbar">
+<div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+<button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+<span class="material-icons">Menu</span>
+</button>
+<h1 class="navbar-title">Dog Cat</h1>
+<nav class="navbar-menu">
+<button type="button">Home</button>
+<button type="button">Encuentra a tu mejor amigo</button>
+<button type="button">Donaciones</button>
+</nav>
+</nav>
+<div class="container">
+<div id="map"></div>
+</div>
+<script type="module" src="js/backend.js"></script>
+<script type="text/javascript" src="js/hello.all.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<footer>
+</footer>
+</body>
+</html>

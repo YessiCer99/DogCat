@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dog Cat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+<nav class="navbar">
+<div class="navbar-cont">
+<button type="button" class="navbar-burger" onclick="toggleMenuOpen()"></button>
+<div class="navbar-logo"></div>
+<span class="navbar-title">DogCat</span>
+</div>
+<div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+<nav class="navbar-menu">
+<div class="navbar-menu-header">
+<div class="header-icon"></div>
+<h1>ADMINISTRADOR</h1>
+</div>
+<button onclick="window.location.href = 'admin.html'">Mascotas</button>
+<div class="submenu"><a>Catálogo de mascotas</a>
+<button onclick="window.location.href = 'Catalogo_dogs.html'">Catálogo de perros</button>
+<button onclick="window.location.href = 'Catalogo_cats.html'">Catálogo de gatos</button>
+</div>
+<button>Solicitudes de adopción</button>
+<button onclick="window.location.href = 'donaciones.html'">Donaciones</button>
+</nav>
+<div class="content-right">
+  <div id="image-right"></div>
+  <button id="button-back" onclick="window.location.href = 'index.html'" type="button">Volver</button>
+</div>
+</nav>
+<div class="container">
+<div class="table">
+    <table>
+        <caption>Gestión de adopciones</caption>
+        <thead>
+          <tr>
+            <!-- <th>&nbsp;</th> -->
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Correo</th>
+            <th>Razon de adopcion</th>
+            <th>¿En donde vivirá?</th>
+            <th>Mascota</th>
+            <th>Foto</th>
+            <th>Estatus</th>
+          </tr>
+      </thead>
+      <tbody id="tab-body"></tbody>
+    </table>
+</div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/hello.all.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/solicitudesAdopcion.js"></script>
+<footer>
+</footer>
+</body>
+</html>

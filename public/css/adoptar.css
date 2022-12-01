@@ -1,0 +1,273 @@
+ .contFul{
+    max-width: 30 xp;
+ }
+
+ .izFloat{
+    float: left;
+    width: 33%;
+    height: 15%;
+ }
+
+ .deFloat{
+    float: right;
+    width: 40%;
+ }
+.div1Medio{
+    width: 90%;
+}
+ 
+#imgMascota626{
+    width: 97%;
+    height: 97%;
+}
+
+.doFloat{
+    float: right;
+}
+
+@font-face
+{
+	font-family: "League Spartan";
+	src: url(../fonts/League_Spartan/static/LeagueSpartan-Regular.ttf);
+}
+
+.img_amigo{
+    
+        height: 62px;
+        margin-left: 16px;
+    
+}
+.text_amigo{
+    
+       
+        font-family: 'League Spartan';
+        font-size: 19px;
+        font-weight: 400;
+        color: black;
+        position: fixed;
+        margin-left: 75px;
+    
+    
+}
+
+button.button_again:hover, button.button_adopcion:hover{
+    background-color: black!important;
+
+
+}
+.navbar-menu > .button_again2{
+    font-family: "League Spartan";
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 120px;
+    left: 1260px;
+    margin-right: 35px;
+    margin-left: 35px;
+    top: 41px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+.navbar > .button_again2{
+    font-family:"League Spartan";
+    background-color:black; 
+    color:#ffff;
+    border-radius:5px; 
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+.navbar-menu > .button_adopcion{
+    font-family:"League Spartan";
+    background-color: #332213; 
+    color:#ffff;
+    border-radius:5px; 
+    height: 40px;
+    width: 279px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+#title_dogs{
+    text-align: center;
+    padding: 60px 0px 16px 0px;
+    color: black;
+    font-family: 'League Spartan';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+#map
+{
+height: 450px;
+margin: 100px 10px;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background: orange;
+    color: #f9f9f9;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 0 0 16px;
+    }
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1.0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar-overlay {
+        display: none;
+    }
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar-burger {
+        display: none;
+    }
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(0,0,0, 1.0);
+    visibility: hidden;
+    transition: translate 0.3s;
+}
+
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+
+@media only screen and (min-width: 400px) {
+    .navbar-menu {
+        position: static;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
+    }
+}
+
+
+
+body.open .navbar-menu > button {
+    color: rgba(255, 255, 255, 1.0);
+    background: rgba(0, 0, 0, 0.0);
+    border-radius: 0px;
+    padding: 0 0px;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+}
+.navbar-menu > button {
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1.0);
+  background: rgba(0, 0, 0, 0.0);
+  border-radius: 10px;
+  padding: 0 10px;
+  height: 20px;
+}
+.navbar-menu > button.active {
+    color: inherit;
+}
+
+body {
+    display: contents;
+    color: brown;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin: 30px;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:transparent;
+    
+  }
+  .container:before {
+    content: "";
+    left: -150%;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1.0);
+    transform: rotate(0deg);
+    z-index: -1;
+  }

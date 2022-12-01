@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html style="background-image: url(/public/images/fondo_cat.jpg);">
+<head>
+  <meta charset="UTF-8">
+    
+    <title>Catalogo mascotas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cat_dogs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="text/javascript" src="js/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+
+</head>
+    <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKH3MFAxTeIHbLHs7KzJnp8xkFsmheCCo&callback=initMap&libraries=&v=weekly"
+defer>
+</script>
+<body>
+<nav class="navbar">
+<div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+<button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+<span class="material-icons">Menu</span>
+</button>
+<img class="img_amigo" src="/public/images/amigo_dog.jpg"></img>
+<h1 class="text_amigo">Un nuevo compañero de<br></br>vida te espera</h1>
+<nav class="navbar-menu" style="padding: 10px;">
+ 
+
+<button class="button_adopcion" onclick="select('cats')">ADOPTA UN GATO</button>
+<button class="button_again2" onclick="volver999();">Volver</button>
+</nav>
+</nav>
+
+
+<!--  Inicio de la pagina -->
+
+
+<div class="container" >
+
+
+<h1 id="title_dogs">Perros en espera de adopción....</h1>
+
+
+      <!-- Seccion de categoria de busqueda -->
+
+
+<div class="store-adopt">
+    <div class="category-list" style="background-color: #F6D581;">
+        <h2 class="title_cat">Nombre de la mascota</h2>
+        <div class="buscar"  style="margin-left: 20px;">
+            <input type="text" placeholder="Buscar" id="nombrebusqueda9" required />
+            <div class="btn" style="margin-right: 20px;">
+              <i class="fas fa-search icon"></i>
+            </div>
+          </div>
+          <h2 class="title_cat" >Sexo</h2>
+          <div class="buscador_category" style="margin:20px;">
+          <input type="radio" name="sexo" value="hembra" id="hembra" />
+          <label for="hembra" id="hembra">Hembra</label>
+          <input type="radio" name="sexo" value="macho" id="Macho" />
+          <label for="macho" id="Macho" >Macho</label>
+          </div>
+          <h2 class="title_cat">Talla</h2>
+        <div class="buscar" style="margin-left: 20px;">
+            <input type="text" placeholder="Buscar" id="tallabusqueda9" required />
+            <div class="btn" style="margin-right: 20px;">
+              <i class="fas fa-search icon"></i>
+            </div>
+          </div>
+          <div class="buscador_category" style=" text-align:center; margin:20px;">
+          <button class="button_adopcion2" onclick="btnbusqueda999();">BUSCAR</button>
+          <button class="button_adopcion3" onclick="btncancelar999();">CANCELAR</button>
+        </div>
+    </div>
+
+
+<!-- Seccion de catalogo de mascotas de pagina web -->
+
+<section class="product-animals" id="divContainer">
+
+</section>
+
+</div>
+
+<!-- Seccion de pagina catalogo modo responsivo -->
+
+
+<div class="version_resp">
+<h1 id="title_dogs">Perros en espera de adopción....</h1>
+</div>
+
+
+
+  <!-- Seccion de catalogo modo carrusel -->
+
+
+<div id="carrusel">
+  <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+  <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+  <div class="carrusel" id="divCarrusel">
+
+  </div>
+</div>
+</div>
+</div>
+
+<footer>
+</footer>
+
+
+<script type="module" src="js/backend.js"></script>
+<script type="text/javascript" src="js/hello.all.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/catalogo_dogs.js"></script>
+        
+
+</body>
+</html>
